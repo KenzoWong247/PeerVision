@@ -12,9 +12,9 @@ public class ScrollBehaviour : MonoBehaviour
     void LateUpdate()
     {
         uvOffset += (uvAnimationRate * Time.deltaTime);
-        if (renderer.enabled)
+        //if (renderer.enabled)
         {
-            renderer.materials[materialIndex].SetTextureOffset(textureName, uvOffset);
+            //renderer.materials[materialIndex].SetTextureOffset(textureName, uvOffset);
         }
     }
 }

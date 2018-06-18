@@ -3,6 +3,37 @@ using System.Collections;
 
 public class LookAtCameraBehaviour : MonoBehaviour
 {
+    public Camera overheadCamera;
+    public Camera studentCamera;
+    public Camera teacherCamera;
+
+    public void toggleView()
+    {
+        if (overheadCamera.isActiveAndEnabled)
+        {
+            overheadCamera.enabled = false;
+            studentCamera.enabled = true;
+            teacherCamera.enabled = false;
+        }
+        else if (studentCamera.isActiveAndEnabled)
+        {
+            overheadCamera.enabled = false;
+            studentCamera.enabled = false;
+            teacherCamera.enabled = true;
+        }
+        else if (teacherCamera.isActiveAndEnabled)
+        {
+            overheadCamera.enabled = true;
+            studentCamera.enabled = false;
+            teacherCamera.enabled = false;
+        }
+        else
+        {
+            overheadCamera.enabled = true;
+            studentCamera.enabled = false;
+            teacherCamera.enabled = false;
+        }
+    }
 	// Use this for initialization
 	void Start () 
     {
