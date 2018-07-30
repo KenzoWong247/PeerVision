@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e2414b993e65fb8428a947c74f4c6a1d
+guid: a5d0e8a8724d64501aa9c0a01d4339a4
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -16,7 +16,17 @@ ModelImporter:
     4300000: Window_Frame_004
     4300002: Blinds_009
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic
+    second: {fileID: 2100000, guid: dbfa7434f7812dc4a807afa3a2bde23e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood
+    second: {fileID: 2100000, guid: ee25db07731fa06428aeecfb1e2dec62, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

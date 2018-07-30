@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4d1c5396c14dcaf4b8a4fca6e4a73592
+guid: 2b0c0850a62a94cf195f012bb5995ab7
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -9,7 +9,12 @@ ModelImporter:
     3300000: //RootNode
     4300000: low001
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Electricity_Box
+    second: {fileID: 2100000, guid: d834d8198db6b6b4f8fc381711f97c3f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

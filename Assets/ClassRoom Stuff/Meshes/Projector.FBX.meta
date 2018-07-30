@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 80f1ebf213429f1458586932f3a4c8cd
+guid: ec3ec192f7920412f8ccdd9b12272944
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -9,7 +9,12 @@ ModelImporter:
     3300000: //RootNode
     4300000: Box098
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Projector
+    second: {fileID: 2100000, guid: 5a9c874702df7954f8272ad7bdc2cec5, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

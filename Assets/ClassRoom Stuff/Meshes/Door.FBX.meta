@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ac457c322550d734aae801e4f0ed3ed7
+guid: 1d3e440bd0e3547468a0722e0a00e667
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -31,7 +31,27 @@ ModelImporter:
     4300006: Poster_011
     4300008: Poster_012
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Door
+    second: {fileID: 2100000, guid: 5fb3b8df8b0e09e48905327c2572b068, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: 8d23ac9585d98764d835ab5dc7f9306d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Posters
+    second: {fileID: 2100000, guid: 5ada7aa293506a64485ea0d47a4fe36c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood
+    second: {fileID: 2100000, guid: ee25db07731fa06428aeecfb1e2dec62, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 458426798ec768a418345b71252b864c
+guid: 5ba5afb24b376481a8b2d4c6fe2d9c93
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -9,7 +9,12 @@ ModelImporter:
     3300000: //RootNode
     4300000: Geen_Board001
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Green_Board
+    second: {fileID: 2100000, guid: 401c9c4e4793e064ebcf9d4c1cf9ead7, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

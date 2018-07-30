@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4f67c20384d1d144c8676f1d9c4e7f4d
+guid: 7cffd9c693ed04211b158a318bae4ad1
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -9,7 +9,12 @@ ModelImporter:
     3300000: //RootNode
     4300000: Table_002
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tables
+    second: {fileID: 2100000, guid: 9e983cdb4f280aa4cb9be82b12461840, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

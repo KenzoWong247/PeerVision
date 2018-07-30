@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a1b071d663ddd2c48b823c734ef1ee65
+guid: 67b16c9df15114375a183bc844aae828
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -14,7 +14,12 @@ ModelImporter:
     4300000: Fan_holder_002
     4300002: Fan_002
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fan
+    second: {fileID: 2100000, guid: 8d5380577aa55f04085a1244a4153752, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

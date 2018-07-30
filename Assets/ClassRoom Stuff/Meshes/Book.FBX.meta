@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f43895422c5b6cc46bd4dee3435e38f1
+guid: 8a16c7e76f95442f1ac264126879c4ff
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -9,7 +9,12 @@ ModelImporter:
     3300000: //RootNode
     4300000: Book_003
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BookCisco
+    second: {fileID: 2100000, guid: dcea03edb88d7a940b0fbd942c2ddf2f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

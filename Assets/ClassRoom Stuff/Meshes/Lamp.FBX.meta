@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3d6bbcd189757a542830a66d7138497e
+guid: 9f5c16e37cf204e1b8d2803104f89710
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -9,7 +9,17 @@ ModelImporter:
     3300000: //RootNode
     4300000: Lamp_008
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lamp_Reflective
+    second: {fileID: 2100000, guid: 2a092d71b60b74047a65f8be4257bccd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lamps
+    second: {fileID: 2100000, guid: 2a092d71b60b74047a65f8be4257bccd, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

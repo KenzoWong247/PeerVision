@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 649aa385f7c338746b7e22a286574952
+guid: 05cee96293f5f426dbaa68c3caf93438
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -41,7 +41,12 @@ ModelImporter:
     4300010: Poster_019
     4300012: Poster_013
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Posters
+    second: {fileID: 2100000, guid: 5ada7aa293506a64485ea0d47a4fe36c, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

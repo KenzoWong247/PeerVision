@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d483c2143a69ccc4f841042eb9a72cb5
+guid: 15b40be93084e45db82d6256de354371
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -21,7 +21,12 @@ ModelImporter:
     4300002: PC005
     4300004: Monitor005
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PC
+    second: {fileID: 2100000, guid: e30176cd4da79504e9a93d442119f006, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
