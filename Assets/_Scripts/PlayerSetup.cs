@@ -5,6 +5,8 @@ using UnityEngine.Networking;
 
 public class PlayerSetup : NetworkBehaviour {
 
+    //Components of prefab to disable when not local player
+    [SerializeField]
     Behaviour[] componentsToDisable;
 
     void Start()
