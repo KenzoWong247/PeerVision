@@ -9,4 +9,8 @@ public class LoadSceneOnClick : MonoBehaviour {
     {
         SceneManager.LoadScene(scene);
     }
+    public void UnloadScene(int scene)
+    {
+        SceneManager.UnloadSceneAsync(scene);
+    }
 }
