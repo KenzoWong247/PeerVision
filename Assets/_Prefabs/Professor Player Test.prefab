@@ -1366,6 +1366,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4453842249477258}
   - component: {fileID: 114581952037384144}
+  - component: {fileID: 114532187667520352}
   m_Layer: 0
   m_Name: 'Girl004 '
   m_TagString: Untagged
@@ -5081,6 +5082,38 @@ MonoBehaviour:
     i15: 142
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
+--- !u!114 &114532187667520352
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1516644690254782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 105
+    i1: 160
+    i2: 72
+    i3: 248
+    i4: 175
+    i5: 47
+    i6: 187
+    i7: 164
+    i8: 107
+    i9: 54
+    i10: 236
+    i11: 205
+    i12: 132
+    i13: 16
+    i14: 17
+    i15: 142
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!114 &114581952037384144
 MonoBehaviour:
   m_ObjectHideFlags: 1
