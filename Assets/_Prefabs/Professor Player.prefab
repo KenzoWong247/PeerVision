@@ -1961,7 +1961,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4689133469481268}
-  - component: {fileID: 95948231873497756}
   - component: {fileID: 114752198631917242}
   m_Layer: 0
   m_Name: 'Girl004 '
@@ -4955,24 +4954,6 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1014378161228932}
   m_Enabled: 1
---- !u!95 &95948231873497756
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1769988835374220}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 877068da53807ea4cb82ae680f295d75, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 1
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114028533169056488
 MonoBehaviour:
   m_ObjectHideFlags: 1
