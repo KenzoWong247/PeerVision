@@ -1066,7 +1066,6 @@ GameObject:
   - component: {fileID: 114730737977109150}
   - component: {fileID: 114685390838073980}
   - component: {fileID: 114649517527509918}
-  - component: {fileID: 114294354384660064}
   - component: {fileID: 95571710838789716}
   - component: {fileID: 114702061945178456}
   m_Layer: 0
@@ -4969,7 +4968,7 @@ Animator:
   m_Avatar: {fileID: 9000000, guid: 877068da53807ea4cb82ae680f295d75, type: 3}
   m_Controller: {fileID: 9100000, guid: 1204362ea160d44f7937305b219e3e19, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 1
+  m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
@@ -5034,18 +5033,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 0
   origin: {fileID: 0}
---- !u!114 &114294354384660064
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1404661017035284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -837897634, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_VisualizerPrefab: {fileID: 1404661017035284}
 --- !u!114 &114471187249934478
 MonoBehaviour:
   m_ObjectHideFlags: 1
