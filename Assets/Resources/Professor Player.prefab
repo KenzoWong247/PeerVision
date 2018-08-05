@@ -1647,8 +1647,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4592165890342014}
   - component: {fileID: 114522388472483050}
-  - component: {fileID: 114794820636065118}
-  - component: {fileID: 114797772764207196}
   m_Layer: 0
   m_Name: 'Girl004 '
   m_TagString: Untagged
@@ -5379,64 +5377,14 @@ MonoBehaviour:
   ownershipTransfer: 0
   ObservedComponents:
   - {fileID: 114463487853314210}
+  - {fileID: 4473315368524314}
+  - {fileID: 4348041562204038}
+  - {fileID: 4742467858757672}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 0
-  instantiationId: -1
+  viewIdField: 1
+  instantiationId: 1
   currentMasterID: -1
   isRuntimeInstantiated: 0
---- !u!114 &114794820636065118
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1635820559727684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 77
-    i1: 168
-    i2: 107
-    i3: 230
-    i4: 164
-    i5: 198
-    i6: 180
-    i7: 84
-    i8: 186
-    i9: 133
-    i10: 90
-    i11: 36
-    i12: 248
-    i13: 107
-    i14: 165
-    i15: 103
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 0
---- !u!114 &114797772764207196
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1635820559727684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TransformSyncMode: 1
-  m_SendInterval: 0.1
-  m_SyncRotationAxis: 7
-  m_RotationSyncCompression: 0
-  m_SyncSpin: 0
-  m_MovementTheshold: 0.001
-  m_VelocityThreshold: 0.0001
-  m_SnapThreshold: 5
-  m_InterpolateRotation: 1
-  m_InterpolateMovement: 1
 --- !u!114 &114855939102535130
 MonoBehaviour:
   m_ObjectHideFlags: 1
