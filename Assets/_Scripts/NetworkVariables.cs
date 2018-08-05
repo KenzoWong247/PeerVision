@@ -5,6 +5,11 @@ using UnityEngine.UI;
 
 public class NetworkVariables : MonoBehaviour {
 
+    public void Start()
+    {
+        PlayerPrefs.DeleteAll();
+    }
+
     public void SetServerName(Text text)
     {
         PlayerPrefs.SetString("ServerName", text.text);
