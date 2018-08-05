@@ -39,11 +39,13 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 
    public void JoinRoom()
     {
-        playerType = PlayerPrefs.GetInt("Type");
-        Debug.Log("Player Type " + playerType);
+        int playerType = NetworkVariables.PlayerType;
+        Debug.Log("Retrieved player Type " + playerType);
+
+        string serverName = NetworkVariables.ServerName;
+        Debug.Log("Retrieved server name " + serverName);
         if (playerType == 0)
         {
-            string serverName = PlayerPrefs.GetString("ServerName");
             RoomOptions roomOptions = new RoomOptions();
             roomOptions.MaxPlayers = 6;
             PhotonNetwork.JoinOrCreateRoom(serverName, roomOptions, null);
@@ -51,7 +53,6 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
         }
         else
         {
-            string serverName = PlayerPrefs.GetString("JoinServerName");
             PhotonNetwork.JoinRoom(serverName);
             Debug.Log("Joined Room " + serverName);
         }

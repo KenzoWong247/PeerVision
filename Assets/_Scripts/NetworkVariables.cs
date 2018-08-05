@@ -4,33 +4,30 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class NetworkVariables : MonoBehaviour {
-   
-    public void SetServerName(Text text)
-    {
-        PlayerPrefs.DeleteKey("ServerName");
-        PlayerPrefs.SetString("ServerName", text.text);
-        Save();
-    }
-
-    public void SetPlayerType(int type)
-    {
-        PlayerPrefs.DeleteKey("PlayerType");
-        PlayerPrefs.SetInt("PlayerType", type);
-        Debug.Log("Set Player Type to " + type);
-        Save();
-    }
-
-    public void JoinServerName(RoomListItem roomListItem)
-    {
-        PlayerPrefs.DeleteKey("JoinServerName");
-        string name = roomListItem.GetRoomName();
-        PlayerPrefs.SetString("JoinServerName", name);
-        Save();
-    }
-
-    private void Save()
-    {
-        PlayerPrefs.Save();
-    }
     
+
+    public static NetworkVariables NV;
+
+    public static int PlayerType { get; set; }
+
+    public static string ServerName { get; set; }
+
+    private bool created;
+
+    void Awake()
+    {
+        if (NV == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            created = true;
+            Debug.Log("Awake: " + gameObject);
+        }
+        else
+        {
+            if(NV != this)
+            {
+                Destroy(gameObject);
+            }
+        }
+    }
 }
