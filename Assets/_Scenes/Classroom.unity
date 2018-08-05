@@ -12314,7 +12314,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1957582962}
   m_LocalRotation: {x: -0, y: 0.7186277, z: -0, w: 0.6953951}
-  m_LocalPosition: {x: 1.9287038, y: -0.99, z: -3.3563845}
+  m_LocalPosition: {x: 1.241, y: -1.125, z: 1.245}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1469256696}
@@ -12463,9 +12463,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c0e7f60108e9e64e83c9ce3353a2504, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomSize: 6
-  roomName: 
-  networkManager: {fileID: 0}
 --- !u!1001 &1964602097
 Prefab:
   m_ObjectHideFlags: 0
