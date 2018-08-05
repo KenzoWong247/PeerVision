@@ -41,9 +41,8 @@ GameObject:
   - component: {fileID: 114765303741326152}
   - component: {fileID: 114470181771892906}
   - component: {fileID: 114974074617952898}
-  - component: {fileID: 114907818436363760}
-  - component: {fileID: 65099560583371584}
   - component: {fileID: 114827477286524336}
+  - component: {fileID: 114310230631928198}
   m_Layer: 5
   m_Name: Server List Item
   m_TagString: Untagged
@@ -51,18 +50,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &65099560583371584
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1836544993571164}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 598.3, y: 47.6, z: 0}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114144149466449214
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -90,6 +77,17 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114310230631928198
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1836544993571164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a6e6d4bc01cc054c9fb16818c41f30c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114470181771892906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -181,13 +179,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114974074617952898}
-        m_MethodName: JoinGame
-        m_Mode: 1
+      - m_Target: {fileID: 114827477286524336}
+        m_MethodName: LoadScene
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -198,6 +196,17 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114310230631928198}
+        m_MethodName: SetServerName
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 114633757962778778}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -216,17 +225,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 554c0e1cf2f7e8540a9ff89f21fb4266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114907818436363760
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1836544993571164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9beb665707d64cc4589883041a0705e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114974074617952898
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -238,7 +236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cbed38d3e380bb4fa7aeb35667358cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomNameText: {fileID: 114633757962778778}
+  RoomNameText: {fileID: 114633757962778778}
 --- !u!222 &222834036557448236
 CanvasRenderer:
   m_ObjectHideFlags: 1
