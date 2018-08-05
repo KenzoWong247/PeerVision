@@ -16,9 +16,10 @@ public class NetworkVariables : MonoBehaviour {
         Debug.Log("Set Player Type to " + type);
     }
 
-    public void JoinServerName(Text text)
+    public void JoinServerName(RoomListItem roomListItem)
     {
-        PlayerPrefs.SetString("JoinServerName", text.text);
+        string name = roomListItem.GetRoomName();
+        PlayerPrefs.SetString("JoinServerName", name);
     }
     
 }
