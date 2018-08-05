@@ -38,6 +38,8 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
         RoomOptions roomOptions = new RoomOptions();
         roomOptions.MaxPlayers = 6;
 
+        string roomName = 
+
         PhotonNetwork.JoinOrCreateRoom("RoomName", roomOptions, null);
         
     }
