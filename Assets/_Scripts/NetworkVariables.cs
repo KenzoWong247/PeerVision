@@ -9,6 +9,7 @@ public class NetworkVariables : MonoBehaviour {
     {
         PlayerPrefs.DeleteKey("ServerName");
         PlayerPrefs.SetString("ServerName", text.text);
+        Save();
     }
 
     public void SetPlayerType(int type)
@@ -16,6 +17,7 @@ public class NetworkVariables : MonoBehaviour {
         PlayerPrefs.DeleteKey("PlayerType");
         PlayerPrefs.SetInt("PlayerType", type);
         Debug.Log("Set Player Type to " + type);
+        Save();
     }
 
     public void JoinServerName(RoomListItem roomListItem)
@@ -23,6 +25,12 @@ public class NetworkVariables : MonoBehaviour {
         PlayerPrefs.DeleteKey("JoinServerName");
         string name = roomListItem.GetRoomName();
         PlayerPrefs.SetString("JoinServerName", name);
+        Save();
+    }
+
+    private void Save()
+    {
+        PlayerPrefs.Save();
     }
     
 }
