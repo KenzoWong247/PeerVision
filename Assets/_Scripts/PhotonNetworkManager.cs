@@ -8,7 +8,7 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
     [SerializeField] private GameObject player;
     [SerializeField] private Transform professorSpawnPoint;
     [SerializeField] private Transform[] studentSpawnPoints;
-
+    
     private int maxSpawnpoints;
     private int numberOfPlayers;
     private int playerType;
@@ -75,7 +75,9 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
             if (numberOfPlayers > 2)
                 numberOfPlayers = numberOfPlayers % maxSpawnpoints;
             int spawnpoint = numberOfPlayers - 1;
-            PhotonNetwork.Instantiate(player.name, studentSpawnPoints[spawnpoint].position, studentSpawnPoints[spawnpoint].rotation, 0);
+            ViveManager.Instance.head.transform.position = studentSpawnPoints[spawnpoint].position;
+            ViveManager.Instance.head.transform.rotation = studentSpawnPoints[spawnpoint].rotation;
+            PhotonNetwork.Instantiate(player.name, ViveManager.Instance.head.transform.position, ViveManager.Instance.head.transform.rotation, 0);
         }
     }
   

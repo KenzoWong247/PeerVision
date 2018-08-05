@@ -25,7 +25,12 @@ public class PlayerController : MonoBehaviour
         movement *= speed;
 
         transform.position += movement * Time.deltaTime;
-        transform.Rotate(0, Input.GetAxis("Rotate")*rotationSpeed*Time.deltaTime * -1, 0); 
+        transform.Rotate(0, Input.GetAxis("Rotate")*rotationSpeed*Time.deltaTime * -1, 0);
+
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            transform.position += new Vector3(0.0f, 0.5f, 0.0f);
+        }
         
     }
 }

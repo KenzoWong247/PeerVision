@@ -783,6 +783,7 @@ GameObject:
   - component: {fileID: 23850579345612426}
   - component: {fileID: 33548906123547748}
   - component: {fileID: 114183348308173998}
+  - component: {fileID: 114918798001528574}
   m_Layer: 0
   m_Name: '[CameraRig]'
   m_TagString: Untagged
@@ -5427,6 +5428,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: -1
   origin: {fileID: 0}
+--- !u!114 &114918798001528574
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1302414426738574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9e81a11b8f48f43870c04910def1af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  head: {fileID: 1073851877346680}
+  rightHand: {fileID: 1866736100697580}
+  leftHand: {fileID: 1124943079428788}
 --- !u!114 &114992107607160238
 MonoBehaviour:
   m_ObjectHideFlags: 1
