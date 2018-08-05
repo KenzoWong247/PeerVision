@@ -46,7 +46,7 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
             string serverName = PlayerPrefs.GetString("ServerName");
             RoomOptions roomOptions = new RoomOptions();
             roomOptions.MaxPlayers = 6;
-            PhotonNetwork.CreateRoom(serverName, roomOptions, null);
+            PhotonNetwork.JoinOrCreateRoom(serverName, roomOptions, null);
             Debug.Log("Created Room: " + serverName);
         }
         else
