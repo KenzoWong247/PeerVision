@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class PhotonNetworkManager : Photon.MonoBehaviour
 {
-    [SerializeField] private GameObject player;
+    [SerializeField] public GameObject player;
+    [SerializeField] public GameObject Rig;
     [SerializeField] private Transform professorSpawnPoint;
     [SerializeField] private Transform[] studentSpawnPoints;
     
@@ -75,6 +76,9 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
             if (numberOfPlayers > 2)
                 numberOfPlayers = numberOfPlayers % maxSpawnpoints;
             int spawnpoint = numberOfPlayers - 1;
+
+            Rig.transform.position = studentSpawnPoints[spawnpoint].position;
+            Rig.transform.rotation = studentSpawnPoints[spawnpoint].rotation;
             ViveManager.Instance.head.transform.position = studentSpawnPoints[spawnpoint].position;
             ViveManager.Instance.head.transform.rotation = studentSpawnPoints[spawnpoint].rotation;
             PhotonNetwork.Instantiate(player.name, ViveManager.Instance.head.transform.position, ViveManager.Instance.head.transform.rotation, 0);
